@@ -85,7 +85,7 @@ section img {
 
 @media only screen and (max-width:600px){
     nav ul li {
-        padding: 1rem auto;
+        padding: 1rem 2rem;
     }
     section {
         padding-top: 0;
@@ -95,7 +95,6 @@ section img {
     }
     .text {
         text-align: center;
-        width: 90vw;
         padding: 1rem 1rem;
     }
 }
