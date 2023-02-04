@@ -22,12 +22,12 @@ nav ul {
     flex-direction: row;
     justify-content: center;
 }
-nav ul li{
+nav li{
     list-style: none;
     padding: 1rem 5rem;
     font-size: 20px;
 }
-nav ul li a {
+nav a {
     color: var(--light);
     text-decoration: none;
 }
@@ -45,12 +45,20 @@ section {
 section:nth-of-type(2n) {
     flex-direction: row-reverse;
 }
-
+section a{
+    color: var(--light);
+    text-decoration: none;
+}
 section:hover {
     color: var(--dark);
     background-color: var(--light);
     text-decoration: underline blue;
     transition: 1s;
+}
+section:hover a{
+    color: var(--dark);
+    transition: 1s;
+    text-decoration: underline blue;
 }
 
 section img {
@@ -71,9 +79,14 @@ section img {
     justify-content: center;
     align-items: center;
 }
-#footer:hover {
+#footer:hover,
+nav:hover {
     color: var(--dark);
     background-color: var(--light);
+    transition: 1s;
+}
+nav:hover a{
+    color: var(--dark);
     transition: 1s;
 }
 #footer p{
@@ -84,7 +97,7 @@ section img {
 }
 
 @media only screen and (max-width:600px){
-    nav ul li {
+    nav li {
         padding: 1rem 2rem;
     }
     section {
@@ -95,6 +108,6 @@ section img {
     }
     .text {
         text-align: center;
-        padding: 1rem 1rem;
+        padding: 1rem 0;
     }
 }
